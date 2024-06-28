@@ -1,0 +1,150 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  width:100vw;
+  height:100vh;
+  background-color: rgb(139, 213, 235);
+}
+.left-side{
+  width: 300px;
+  height: 100vh;
+  background-color:rgba(8, 43, 185, 0.744);
+  text-align: center;
+  padding: 40px 20px;
+  color:white;
+  border: 2px solid black;
+  position: fixed;
+  left: 0;
+  box-shadow: 0 0 50px yellow;
+}
+.left-side .profile-img{
+  width:180px;
+  margin: 0 auto;
+}
+.left-side .profile-img img{
+  width:200px;
+  height:200px;
+  border: 2px solid black;
+  border-radius:50%;
+  box-shadow: 0 0 12px yellow;
+}
+.left-side .profile-name{
+font-size:1.5rem;
+margin-bottom:10px;
+}
+.left-side nav{
+  margin-top: 50px;
+}
+.left-side nav ul{
+  list-style: none;
+}
+.left-side nav ul li{
+  display: block;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+.left-side nav ul li a{
+  text-decoration:none;
+  color:white;
+  opacity: .7;
+  font-size:15px;
+  font-weight: 550;
+}
+.left-side nav ul li a:hover{
+  opacity: 1;
+  text-decoration:underline;
+}
+.main-section{
+  position: fixed;
+  left: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: calc(100%-300px);
+  padding: 40px;
+}
+.main-text{
+  width: 50%;
+  margin-top: 10%;
+}
+.main-text h1{
+  font-size:3rem;
+  color: #807e7e;
+  margin-bottom: 20px;
+}
+.main-text a{
+  text-decoration: none;
+}
+  button {
+    border: none;
+    display: block;
+    position: relative;
+    margin: 40px 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    color: royalblue;
+    z-index: 1;
+    font-family: inherit;
+    font-weight: 500;
+  }
+  
+  button span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 4px solid royalblue;
+  }
+  
+  button span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: var(--lightgray);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all 0.3s;
+  }
+  
+  button:hover span::before {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    background:royalblue;
+  }
+  
+  button:hover {
+    color: white;
+  }
+  
+  button:active span::before {
+    background: #2751cd;
+  }
+.main-img{
+  width: 50%;
+  margin-top:12% ;
+
+}
+.main-img img{
+  width: 100%;
+  height: 80%;
+  background:linear-gradient(to right,#385af297,#0631b2) ;
+  border-radius: 50% 0%;
+  border: 2px solid black;
+  box-shadow: 0 0 12px yellow;
+}
+
